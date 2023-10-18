@@ -19,5 +19,10 @@ def rating_page():
 def contacts_page():
     return render_template('contact.html')
 
+@app.route('/show')
+def show_page():
+    return render_template('show.html')
+
+
 if __name__ == "__main__":
     app.run(debug=True)
