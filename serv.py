@@ -23,6 +23,10 @@ def contacts_page():
 def show_page():
     return render_template('show.html')
 
+@app.route('/home-est')
+def show_est_index():
+    return render_template('index_est.html')
+
 
 if __name__ == "__main__":
     app.run(debug=True)
